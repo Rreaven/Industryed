@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>grass-tile.png</file>
+        <file>driller-head.png</file>
+        <file>driller-hull.png</file>
+        <file>furnace-flame.png</file>
+        <file>furnace-hull.png</file>
+        <file>void-er-flame.png</file>
+        <file>void-er-hull.png</file>
+    </qresource>
+</RCC>

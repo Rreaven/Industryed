@@ -1,0 +1,14 @@
+{
+    "materials": [
+        {
+            "tag": "ingotIron",
+            "name": "Iron Ingot",
+            "maxStackSize": "1000",
+            "textureLookup": "ingotIron",
+            "itemMetadata" :
+            {
+                "isMeltable":false
+            }
+        }
+    ]
+}

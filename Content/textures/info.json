@@ -1,0 +1,74 @@
+{
+    "textures": [
+        {
+            "fileName": "furnace-hull.png",
+            "id": "furnaceHull",
+            "material": 1,
+            "sizeType" : 0,
+            "animated": false
+        },
+        {
+            "fileName": "driller-hull.png",
+            "id": "drillerHull",
+            "material": 1,
+            "sizeType" : 0,
+            "animated": false
+        },
+        {
+            "fileName": "iron-drillerhead.png",
+            "id": "drillerHeadIron",
+            "material": 1,
+            "sizeType" : 0,
+            "animated": false
+        },
+        {
+            "fileName": "void-er-hull.png",
+            "id": "voiderHull",
+            "material": 1,
+            "sizeType" : 0,
+            "animated": false
+        },
+        {
+            "fileName": "furnace-flame-sprite.png",
+            "id": "flame",
+            "material": 1,
+            "sizeType" : 0,
+            "animated": true
+        },
+        {
+            "fileName": "press-frame.png",
+            "id": "pressFrame",
+            "material": 1,
+            "sizeType" : 1,
+            "animated": false
+        },
+        {
+            "fileName": "press-press-animation.png",
+            "id": "pressPress",
+            "material": 1,
+            "sizeType" : 1,
+            "animated": true
+        },
+        {
+            "fileName": "convoyer-belt1.png",
+            "id": "conveyorBelt",
+            "material": 1,
+            "sizeType" : 0,
+            "animated": false
+        },
+        {
+            "fileName": "grass-tile.png",
+            "id": "grassTile",
+            "material": 2,
+            "sizeType" : 0,
+            "animated": false
+        },
+        {
+            "fileName": "ingot-iron.png",
+            "id": "ingotIron",
+            "material": 1,
+            "sizeType" : 0,
+            "animated": false
+        }
+    ]
+}

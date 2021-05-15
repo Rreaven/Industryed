@@ -1,0 +1,60 @@
+{
+    "tiles": [
+        {
+            "tag": "grassBlock",
+            "name": "Grass Block",
+            "textureLookup": "grassTile",
+            "type":0,
+            "isBreakable": false,
+            "blockHealth": 0
+        },
+        {
+            "tag": "press-basic",
+            "name": "Press",
+            "textureLookup": "pressFrame",
+            "type":1,
+            "isBreakable": true,
+            "blockHealth": 50,
+            "parentTexture": "pressPress",
+            "parentTextureActivation" : 0
+        },
+        {
+            "tag": "voider-basic",
+            "name": "V0-ID4R",
+            "textureLookup": "voiderHull",
+            "type":1,
+            "isBreakable": true,
+            "blockHealth": 50,
+            "parentTexture": "flame",
+            "parentTextureActivation" : 0
+        },
+        {
+            "tag": "driller-basic",
+            "name": "Driller",
+            "textureLookup": "drillerHull",
+            "type":1,
+            "isBreakable": true,
+            "blockHealth": 50,
+            "parentTexture": "drillerHeadIron",
+            "parentTextureActivation" : 0
+        },
+        {
+            "tag": "furnace-hull",
+            "name": "Basic Furnace",
+            "textureLookup": "furnaceHull",
+            "type":1,
+            "isBreakable": true,
+            "blockHealth": 50,
+            "parentTexture": "flame",
+            "parentTextureActivation" : 0
+        },
+        {
+            "tag": "conveyor-belt",
+            "name": "Convery Tier 1",
+            "textureLookup": "conveyorBelt",
+            "type":4,
+            "isBreakable": true,
+            "blockHealth": 50
+        }
+    ]
+}
