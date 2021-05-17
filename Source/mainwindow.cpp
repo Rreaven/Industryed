@@ -10,7 +10,7 @@
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
-    setWindowFlags(Qt::FramelessWindowHint);
+    //setWindowFlags(Qt::FramelessWindowHint);
 
     m_InventoryVisible = false;
 
@@ -69,5 +69,5 @@ void MainWindow::generateBasicWorld()
 
 void MainWindow::showInventory()
 {
-    m_InventoryWidget->setHidden(m_InventoryVisible = !m_InventoryVisible);
+    m_InventoryWidget->setVisible(m_InventoryVisible = !m_InventoryVisible);
 }

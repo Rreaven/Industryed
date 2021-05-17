@@ -24,6 +24,13 @@ namespace ReavenEngine
         CONVEYOR_TYPE = 5,
         PIPE_TYPE = 6,
     };
+    enum MaterialState
+    {
+        SOLID = 0,
+        LIQUID = 2,
+        GAS = 3,
+        PLASMA = 4
+    };
 
     enum ParentTextureActivation
     {
@@ -38,8 +45,8 @@ namespace ReavenEngine
         HUGE = 3
     };
 
-    static inline int getProperTileSize(const TileSizeType& type)
-    {
+    static inline constexpr int getProperTileSize(const TileSizeType& type)
+    {        
         switch (type)
         {
             case TileSizeType::SMALL:
@@ -56,6 +63,7 @@ namespace ReavenEngine
 }
 Q_DECLARE_METATYPE(ReavenEngine::Material)
 Q_DECLARE_METATYPE(ReavenEngine::TileType)
+Q_DECLARE_METATYPE(ReavenEngine::MaterialState)
 Q_DECLARE_METATYPE(ReavenEngine::ParentTextureActivation)
 Q_DECLARE_METATYPE(ReavenEngine::TileSizeType)
 #endif // GLOBALS_H

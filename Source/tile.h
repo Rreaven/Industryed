@@ -11,7 +11,7 @@
 class  Tile : public QGraphicsPixmapItem
 {
 public:
-    Tile(){};
+    Tile(){}
     Tile(const TileDataModel& dataModel);
     ~Tile(){}
 
@@ -24,9 +24,6 @@ protected:
     void hoverLeaveEvent(QGraphicsSceneHoverEvent* event) override;
 
     void mousePressEvent(QGraphicsSceneMouseEvent* event) override;
-
-private:
-    void decideTileType();
 
 private:
     Texture* m_Texture;

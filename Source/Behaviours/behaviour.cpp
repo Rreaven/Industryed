@@ -1,6 +1,6 @@
 #include "behaviour.h"
 
-Behaviour::Behaviour()
+Behaviour::Behaviour(Tile *ownerTile) : m_OwnerTile(ownerTile)
 {
 
 }

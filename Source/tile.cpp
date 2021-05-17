@@ -1,5 +1,6 @@
 #include "tile.h"
 #include "Managers/resourcemanager.h"
+#include "Behaviours/furnacebehaviour.h"
 
 #include <QGraphicsSceneMouseEvent>
 #include <QGraphicsScene>
@@ -10,7 +11,6 @@ Tile::Tile(const TileDataModel& dataModel)
 {
     setAcceptHoverEvents(true);
 
-    m_TileBehaviour = nullptr;
     m_IsHover = false;
     m_DataModel = dataModel;
     m_Texture = m_DataModel.TexturePtr;
@@ -19,6 +19,15 @@ Tile::Tile(const TileDataModel& dataModel)
     m_Rotation = 0;
     m_ParentTexture = dataModel.ParentTexturePtr;
     m_TileSize = ReavenEngine::getProperTileSize(m_DataModel.SizeType);
+
+    switch(m_DataModel.Type)
+    {
+    case ReavenEngine::FURNACE_TYPE:
+        m_TileBehaviour = new FurnaceBehaviour(this);
+        break;
+    default:
+        m_TileBehaviour = nullptr;
+    }
 
     setPixmap(m_Texture->getFrame());
 }
@@ -73,9 +82,4 @@ void Tile::mousePressEvent(QGraphicsSceneMouseEvent *event)
             update();
         }
     }
-}
-
-void Tile::decideTileType()
-{
-
 }

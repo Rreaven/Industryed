@@ -2,6 +2,9 @@
 #include "Managers/resourcemanager.h"
 
 #include <QApplication>
+#include <QImage>
+#include <QDebug>
+#include <QColorSpace>
 
 int main(int argc, char *argv[])
 {

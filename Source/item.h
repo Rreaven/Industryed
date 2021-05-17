@@ -2,8 +2,8 @@
 #define ITEM_H
 
 #include <QVariantMap>
-
-QT_FORWARD_DECLARE_CLASS(Texture)
+#include "texture.h"
+#include <Globals.h>
 
 class Item
 {
