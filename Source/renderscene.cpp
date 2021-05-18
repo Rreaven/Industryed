@@ -25,8 +25,8 @@ void RenderScene::mousePressEvent(QGraphicsSceneMouseEvent *mouseEvent)
 {
     if(mouseEvent->button() == Qt::LeftButton)
     {
-        m_IsMouseDown = true;
         addItem(m_GhostItem);
+        m_IsMouseDown = true;
 
         m_SelectedTile = m_GlobalInventory->getCurrentTile();
         m_GhostItem->setPixmap(m_SelectedTile.TexturePtr->getFrame());
@@ -55,9 +55,10 @@ void RenderScene::mouseMoveEvent(QGraphicsSceneMouseEvent *mouseEvent)
 
 void RenderScene::mouseReleaseEvent(QGraphicsSceneMouseEvent *mouseEvent)
 {
-    removeItem(m_GhostItem);
+
     if((mouseEvent->button() == Qt::LeftButton) & !m_IsOccupied)
     {
+        removeItem(m_GhostItem);
         m_IsMouseDown = false;
         QPointF p = mouseEvent->scenePos();
 
